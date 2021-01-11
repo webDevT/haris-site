@@ -1,0 +1,753 @@
+@import "vars"
+@import "fonts"
+
+//start global style
+body 
+	font-family: 'Avenir', sans-serif
+	font-size: 24px
+	font-weight: 300
+	color: #3c4652
+h1
+	font-size: 48px
+	font-family: $mont 
+	font-weight: 600
+h2 
+	font-size: 48px
+	font-family: $mont 
+	font-weight: 600
+	line-height: 1.2
+h3 
+	font-size: 30px 
+	font-family: $mont 
+	font-weight: 500
+.container-fluid 
+	width: 1322px 
+	max-width: 90vw
+	padding-left: 0 
+	padding-right: 0
+ul 
+	padding: 0 
+	margin: 0 
+	list-style: none
+//end global style
+
+//start main screen style
+.main-screen
+	text-align: center
+	color: #fff
+.main-screen__title
+	padding-top: 80px
+	margin-bottom: 30px
+.tb-hero.tb-style11
+	height: 900px
+	background-image: linear-gradient(40deg,#2e5bff 0%,#2effda 100%)
+	-webkit-box-align: end
+	-ms-flex-align: end
+	align-items: flex-end
+.main-screen__sub-title
+	font-size: 36px
+	font-family: $avenir 
+	font-weight: 300
+
+.main-screen__button
+	width: 281px 
+	height: 75px 
+	background: #fff
+	color: rgb(60, 70, 82) 
+	display: flex 
+	justify-content: center 
+	align-items: center
+	border-radius: 10px
+	font-weight: 500
+	margin: 0 auto
+	margin-top: 40px 
+	margin-bottom: 50px
+	cursor: pointer
+.main-screen__img-wrapper
+	position: relative
+	z-index: 999
+.main-screen__button:hover
+	box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08)
+	transform: translateY(-1px)
+	transition: all .5s
+	color: rgba(34,34,34,.8)
+//end main screen style
+
+//start header style
+.header 
+	padding-top: 17px 
+	padding-bottom: 17px
+	.container-fluid 
+		display: flex 
+		justify-content: space-between 
+		align-items: center
+.menu 
+	ul 
+		display: flex
+	a 
+		font-size: 30px 
+		color: rgb(60, 70, 82)
+		text-decoration: none
+	li 
+		margin-left: 60px
+	li:last-child
+		margin-left: 100px
+	li:last-child a 
+		border: 1px solid #efefef
+		padding: 5px 35px
+		border-radius: 30px
+	li:last-child a:hover
+		box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08)
+//end header style
+
+//start features style
+.features 
+	text-align: center
+	padding-top: 170px 
+	padding-bottom: 90px
+	h2 
+		margin-bottom: 70px
+.features__item
+	padding: 60px 25px 40px 25px
+	border: 1px solid rgb(246, 246, 246)
+	box-shadow: 0px 1px 7px 3px rgba(0, 0, 0, 0.05)
+	border-radius: 10px
+	h3 
+		margin-bottom: 27px
+.features__img-wrapper
+	min-height: 230px	
+.view-all
+	margin-top: 65px
+	display: block
+	text-decoration: underline
+	font-weight: 500 
+	font-size: 30px 
+	color: #3c4652
+.view-all:hover
+	color: #3c4652
+//end features style
+
+//start video style
+.video 
+	color: #fff 
+	text-align: center
+	padding-top: 70px 
+	padding-bottom: 90px
+	background: linear-gradient(321deg, rgba(24,240,207,1) 0%, rgba(0,57,255,1) 100%)
+	h2 
+		margin-bottom: 60px
+	iframe 
+		width: 100%
+		height: 750px
+.video-wrapper
+	position: relative
+.video-owerlay
+	position: absolute
+	width: 100% 
+	height: 100% 
+	background: rgba(#000, 1)
+	top: 0 
+	left: 0
+	display: flex 
+	justify-content: center 
+	align-items: center
+	img 
+		cursor: pointer
+	iframe 
+		border: none
+//end video style
+
+//start mobile section style
+.mobile 
+	overflow: hidden
+	padding-top: 117px 
+	padding-bottom: 180px
+	img 
+		max-width: 100%
+	.col-lg-7 
+		display: flex 
+		justify-content: flex-end
+		align-items: center
+		img 
+			transform: translateX(10%)
+	.col-lg-5 
+		display: flex 
+		flex-direction: column 
+		justify-content: center
+	h2 
+		margin-bottom: 20px
+.blue-btn
+	border-radius: 5px
+	background-color: rgb(40, 81, 248)
+	display: flex 
+	justify-content: center 
+	align-items: center
+	color: #fff
+	width: 310px
+	height: 59px
+	margin-top: 30px
+	cursor: pointer
+	transition: all .5s
+.blue-btn:hover
+	transform: translateY(-1px)
+	box-shadow: 0 7px 14px rgba(50,50,93,0.1), 0 3px 6px rgba(0,0,0,0.08)
+
+//end mobile section style
+
+
+//start footer style
+.footer 
+	background: #1d1d21
+	padding-top: 50px 
+	padding-bottom: 34px
+	color: #fff
+	.container-fluid 
+		display: flex 
+		justify-content: space-between
+		a 
+			display: block
+	form 
+		display: flex
+		align-items: center
+		border-radius: 10px 
+		overflow: hidden
+		margin-top: 20px 
+		margin-bottom: 20px
+
+		input 
+			height: 53px
+			padding-left: 13px
+			outline: none
+			border: none
+		input::placeholder 
+			color: #cdcdcd
+		input:focus::placeholder
+			color: transparent
+.submit-btn
+	img 
+		width: 22px
+.footer__menu
+	a 
+		margin-bottom: 30px
+		font-weight: 500 
+		color: #fff
+		text-decoration: none
+	a:last-child 
+		margin-bottom: 0
+.footer__form-title
+	color: #fff
+.submit-btn
+	background: #2851f8
+	height: 53px
+	width: 67px
+	border-bottom-right-radius: 10px 
+	border-top-right-radius: 10px
+	display: flex 
+	align-items: center
+	justify-content: center
+	cursor: pointer
+	img 
+		transform: translateX(-3px)
+.form-prompt
+	display: none
+	color: #2851f8
+	font-size: 18px
+//end footer style
+
+.header--page
+	.menu li:last-child
+		margin-left: 60px 
+		a 
+			border: none
+			padding: 0
+		a:hover 
+			box-shadow: none
+
+
+.main-screen--page .main-screen__img-wrapper
+	transform: translateX(-20%) translateY(-15%)
+.main-screen--page 
+	.tb-hero.tb-style11
+		height: 1020px
+.main-screen__button
+	z-index: 9998
+	position: relative
+.features--page
+	padding-top: 75px
+	.features__item
+		box-shadow: none
+		border: none
+	
+.mobile--features
+	padding-bottom: 100px
+	.col-lg-7
+		justify-content: center
+		img
+			transform: translateX(0)
+.call-to-action
+	text-align: center
+	padding-bottom: 168px
+	h2 
+		margin-bottom: 0
+	.blue-btn
+		margin: 0 auto
+		margin-top: 80px
+
+//start pricing style
+.pricing 
+	h2 
+		text-align: center
+		margin-bottom: 90px
+.pricing__table
+
+.pricing__row
+	
+	border-bottom: 1px solid #ececec
+	display: flex
+	border-left: 1px solid #ececec 
+
+.pricing__col
+	width: 33.333333333333333333%
+	border-right: 1px solid #ececec
+	display: flex 
+	align-items: center
+	padding: 20px
+	img 
+		width: 23px
+		display: block 
+		margin: 0 auto
+	img.cross 
+		width: 15px
+.pricing__row:first-child 
+	border-left: none
+	.pricing__col:nth-child(2),
+	.pricing__col:nth-child(3)
+		padding-top: 0 
+		padding-left: 0 
+		padding-right: 0
+		border-top: 1px solid #ececec
+		flex-direction: column
+.pricing-col__header
+	background: #fafafa
+	border-bottom: 1px solid #ececec
+	padding-top: 25px 
+	padding-bottom: 25px
+	width: 100%
+	display: flex 
+	justify-content: center 
+	align-items: center
+	color: #656565
+	font-weight: 500
+.pricing-col__title
+	margin-bottom: 43px 
+	margin-top: 43px
+	font-size: 54px 
+	color: #222222
+	font-weight: 500
+	font-family: $mont
+	position: relative
+	span 
+		font-size: 23px
+		position: absolute 
+		top: 0 
+		left: 0 
+		transform: translateX(-130%) translateY(40%)
+.pricing-col__btn
+	background: #3460f6
+	color: #fff
+	width: 100%
+	display: flex 
+	justify-content: center 
+	align-items: center
+	height: 67px 
+	border-radius: 10px
+	cursor: pointer
+	font-weight: 500
+	transition: all 0.5s
+.pricing-col__btn:hover
+	box-shadow: 0 7px 14px rgba(50,50,93,0.1), 0 3px 6px rgba(0,0,0,0.08)
+.pricing-col__btn-wrapper
+	width: 100% 
+	padding-left: 30px 
+	padding-right: 30px
+.pricing__col--strong
+	color: #5c5c5c
+	font-weight: 500
+	
+//end pricing srtyle
+.contact-section
+	padding-bottom: 160px
+	padding-top: 50px
+	h2
+		margin-bottom: 35px
+	p 
+		max-width: 475px
+	.blue-btn
+		max-width: 250px
+	a 
+		font-family: $mont 
+		font-weight: 500
+		color: #3c4652
+		text-decoration: none
+	.col-lg-5 
+		display: flex 
+		justify-content: flex-end
+.adress
+	font-family: $mont 
+	font-weight: 500	
+.contact-form-row
+	display: flex	
+	max-width: 600px 
+	justify-content: space-between
+	margin: 0 auto
+	input 
+		border: none 
+		text-align: center
+		outline: none
+	input.main-screen__button:hover 
+		transform: translateY(0)
+	input::placeholder 
+		color: #3c4652
+	input:focus::placeholder
+		color: transparent
+
+.progress-circle
+	font-size: 20px
+	margin: 20px
+	position: relative
+	padding: 0
+	width: 275px
+	height: 275px
+	background-color: #96d5f3
+	border-radius: 50%
+	line-height: 275px
+	float: left
+.progress-circle:after
+	border: none
+	position: absolute
+	top: 15px
+	left: 15px
+	text-align: center
+	display: block
+	border-radius: 50%
+	width: 245px
+	height: 245px
+	background-color: #2c9ee9
+	content: " "
+
+.progress-circle span
+	position: absolute
+	line-height: 275px
+	width: 275px
+	text-align: center
+	display: block
+	color: #fff
+	z-index: 2
+.left-half-clipper
+	border-radius: 50%
+	width: 275px
+	height: 275px
+	position: absolute
+	clip: rect(0, 275px, 275px, 137.5px)
+.progress-circle.over50 .left-half-clipper
+	clip: rect(auto,auto,auto,auto)
+.value-bar
+	position: absolute
+	clip: rect(0, 137.5px, 275px, 0)
+	width: 275px
+	height: 275px
+	border-radius: 50%
+	border: 15px solid #fff
+	box-sizing: border-box
+.progress-circle.over50 .first50-bar
+	position: absolute
+	clip: rect(0, 275px, 275px, 137.5px)
+	background-color: #fff
+	border-radius: 50%
+	width: 275px
+	height: 275px
+.progress-circle:not(.over50) .first50-bar
+	display: none
+
+.progress-circle.p0 .value-bar
+	display: none
+.progress-circle.p1 .value-bar
+	transform: rotate(4deg)
+.progress-circle.p2 .value-bar
+	transform: rotate(7deg)
+.progress-circle.p3 .value-bar
+	transform: rotate(11deg)
+.progress-circle.p4 .value-bar
+	transform: rotate(14deg)
+.progress-circle.p5 .value-bar
+	transform: rotate(18deg)
+.progress-circle.p6 .value-bar
+	transform: rotate(22deg)
+.progress-circle.p7 .value-bar
+	transform: rotate(25deg)
+.progress-circle.p8 .value-bar
+	transform: rotate(29deg)
+.progress-circle.p9 .value-bar
+	transform: rotate(32deg)
+.progress-circle.p10 .value-bar
+	transform: rotate(36deg)
+.progress-circle.p11 .value-bar
+	transform: rotate(40deg)
+.progress-circle.p12 .value-bar
+	transform: rotate(43deg)
+.progress-circle.p13 .value-bar
+	transform: rotate(47deg)
+.progress-circle.p14 .value-bar
+	transform: rotate(50deg)
+.progress-circle.p15 .value-bar
+	transform: rotate(54deg)
+.progress-circle.p16 .value-bar
+	transform: rotate(58deg)
+.progress-circle.p17 .value-bar 
+	transform: rotate(61deg)
+.progress-circle.p18 .value-bar 
+	transform: rotate(65deg)
+.progress-circle.p19 .value-bar 
+	transform: rotate(68deg)
+.progress-circle.p20 .value-bar 
+	transform: rotate(72deg)
+.progress-circle.p21 .value-bar 
+	transform: rotate(76deg)
+.progress-circle.p22 .value-bar 
+	transform: rotate(79deg)
+.progress-circle.p23 .value-bar 
+	transform: rotate(83deg)
+.progress-circle.p24 .value-bar 
+	transform: rotate(86deg)
+.progress-circle.p25 .value-bar 
+	transform: rotate(90deg)
+.progress-circle.p26 .value-bar 
+	transform: rotate(94deg)
+.progress-circle.p27 .value-bar 
+	transform: rotate(97deg)
+.progress-circle.p28 .value-bar 
+	transform: rotate(101deg)
+.progress-circle.p29 .value-bar 
+	transform: rotate(104deg)
+.progress-circle.p30 .value-bar 
+	transform: rotate(108deg)
+.progress-circle.p31 .value-bar 
+	transform: rotate(112deg)
+.progress-circle.p32 .value-bar 
+	transform: rotate(115deg)
+.progress-circle.p33 .value-bar 
+	transform: rotate(119deg)
+.progress-circle.p34 .value-bar 
+	transform: rotate(122deg)
+.progress-circle.p35 .value-bar 
+	transform: rotate(126deg)
+.progress-circle.p36 .value-bar 
+	transform: rotate(130deg)
+.progress-circle.p37 .value-bar 
+	transform: rotate(133deg)
+.progress-circle.p38 .value-bar 
+	transform: rotate(137deg)
+.progress-circle.p39 .value-bar 
+	transform: rotate(140deg)
+.progress-circle.p40 .value-bar 
+	transform: rotate(144deg)
+.progress-circle.p41 .value-bar 
+	transform: rotate(148deg)
+.progress-circle.p42 .value-bar 
+	transform: rotate(151deg)
+.progress-circle.p43 .value-bar 
+	transform: rotate(155deg)
+.progress-circle.p44 .value-bar 
+	transform: rotate(158deg)
+.progress-circle.p45 .value-bar 
+	transform: rotate(162deg)
+.progress-circle.p46 .value-bar 
+	transform: rotate(166deg)
+.progress-circle.p47 .value-bar 
+	transform: rotate(169deg)
+.progress-circle.p48 .value-bar 
+	transform: rotate(173deg)
+.progress-circle.p49 .value-bar 
+	transform: rotate(176deg)
+.progress-circle.p50 .value-bar 
+	transform: rotate(180deg)
+.progress-circle.p51 .value-bar 
+	transform: rotate(184deg)
+.progress-circle.p52 .value-bar 
+	transform: rotate(187deg)
+.progress-circle.p53 .value-bar 
+	transform: rotate(191deg)
+.progress-circle.p54 .value-bar 
+	transform: rotate(194deg)
+.progress-circle.p55 .value-bar 
+	transform: rotate(198deg)
+.progress-circle.p56 .value-bar 
+	transform: rotate(202deg)
+.progress-circle.p57 .value-bar 
+	transform: rotate(205deg)
+.progress-circle.p58 .value-bar 
+	transform: rotate(209deg)
+.progress-circle.p59 .value-bar 
+	transform: rotate(212deg)
+.progress-circle.p60 .value-bar 
+	transform: rotate(216deg)
+.progress-circle.p61 .value-bar 
+	transform: rotate(220deg)
+.progress-circle.p62 .value-bar 
+	transform: rotate(223deg)
+.progress-circle.p63 .value-bar 
+	transform: rotate(227deg)
+.progress-circle.p64 .value-bar 
+	transform: rotate(230deg)
+.progress-circle.p65 .value-bar 
+	transform: rotate(234deg)
+.progress-circle.p66 .value-bar 
+	transform: rotate(238deg)
+.progress-circle.p67 .value-bar 
+	transform: rotate(241deg)
+.progress-circle.p68 .value-bar 
+	transform: rotate(245deg)
+.progress-circle.p69 .value-bar 
+	transform: rotate(248deg)
+.progress-circle.p70 .value-bar 
+	transform: rotate(252deg)
+.progress-circle.p71 .value-bar 
+	transform: rotate(256deg)
+.progress-circle.p72 .value-bar 
+	transform: rotate(259deg)
+.progress-circle.p73 .value-bar 
+	transform: rotate(263deg)
+.progress-circle.p74 .value-bar 
+	transform: rotate(266deg)
+.progress-circle.p75 .value-bar 
+	transform: rotate(270deg)
+.progress-circle.p76 .value-bar 
+	transform: rotate(274deg)
+.progress-circle.p77 .value-bar 
+	transform: rotate(277deg)
+.progress-circle.p78 .value-bar 
+	transform: rotate(281deg)
+.progress-circle.p79 .value-bar 
+	transform: rotate(284deg)
+.progress-circle.p80 .value-bar 
+	transform: rotate(288deg)
+.progress-circle.p81 .value-bar 
+	transform: rotate(292deg)
+.progress-circle.p82 .value-bar 
+	transform: rotate(295deg)
+.progress-circle.p83 .value-bar 
+	transform: rotate(299deg)
+.progress-circle.p84 .value-bar 
+	transform: rotate(302deg)
+.progress-circle.p85 .value-bar 
+	transform: rotate(306deg)
+.progress-circle.p86 .value-bar 
+	transform: rotate(310deg)
+.progress-circle.p87 .value-bar 
+	transform: rotate(313deg)
+.progress-circle.p88 .value-bar 
+	transform: rotate(317deg)
+.progress-circle.p89 .value-bar 
+	transform: rotate(320deg)
+.progress-circle.p90 .value-bar 
+	transform: rotate(324deg)
+.progress-circle.p91 .value-bar 
+	transform: rotate(328deg)
+.progress-circle.p92 .value-bar 
+	transform: rotate(331deg)
+.progress-circle.p93 .value-bar 
+	transform: rotate(335deg)
+.progress-circle.p94 .value-bar 
+	transform: rotate(338deg)
+.progress-circle.p95 .value-bar 
+	transform: rotate(342deg)
+.progress-circle.p96 .value-bar 
+	transform: rotate(346deg)
+.progress-circle.p97 .value-bar 
+	transform: rotate(349deg)
+.progress-circle.p98 .value-bar 
+	transform: rotate(353deg)
+.progress-circle.p99 .value-bar 
+	transform: rotate(356deg)
+.progress-circle.p100 .value-bar
+	transform: rotate(360deg)
+
+.progress-wrapper
+	display: flex 
+	align-items: center 
+	justify-content: space-between
+	max-width: 600px 
+	margin: 0 auto
+.prev,
+.next 
+	cursor: pointer
+.prev--disable,
+.next--d
+	pointer-events: none
+
+.step2 
+	display: none
+.step3 
+	display: none
+.step4 
+	display: none
+.step5 
+	display: none
+.step6
+	display: none
+.progress-circle
+	span 
+		font-size: 48px 
+		font-family: $mont 
+		font-weight: 700
+.main-screen__button--message
+	width: 100%
+.main-screen--page-contact
+	h1 
+		margin-bottom: 100px
+.popup
+	position: absolute
+	top: 33px
+	z-index: 99999999
+	left: 50% 
+	transform: translateX(-50%)
+	width: 98%
+	display: none
+	.tb-hero.tb-style11
+		background-image: linear-gradient(40deg,#2851f8 0%, #0f9ff2 100%)
+		border-radius: 10px
+	.progress-circle:after
+		background: #2851f8
+	.main-screen__title
+		padding-top: 0
+	.tb-hero.tb-style11.tb-bg.tb-flex
+		display: flex 
+		align-items: center
+	.main-screen--page .tb-hero.tb-style11
+		height: 900px
+
+	.close
+		position: absolute 
+		top: 40px 
+		right: 40px
+		z-index: 99999
+		cursor: pointer
+.blue-btn.popup-btn
+	color: #fff
+	text-decoration: none
+//--------start animate style-----
+@keyframes fadeIn
+	from
+		opacity: 0
+	to
+		opacity: 1
+.fadeIn
+	animation-name: fadeIn
+.animated
+	animation-duration: 1s
+	animation-fill-mode: both
+//---------end animate style--------
+@import "media"
+
+
+
