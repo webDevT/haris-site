@@ -26,7 +26,7 @@
 	<div class="container-fluid">
 		<div class="logo">
 			<a href="index.html">
-				<img data-src="img/logo.png" alt="logo">
+				<img src="img/logo.png" alt="logo">
 			</a>
 		</div>
 
@@ -294,11 +294,16 @@ they happen.  </p>
 				Sign up for new updates
 			</div>
 
-			<form action="">
-				<input type="email" placeholder="Enter Email Address">
-				<div class="submit-btn">
-					<img data-src="img/telegram.svg" alt="send icon">
+			<form action="" id="form" method="post">
+				<div class="input-wrapper">
+					<input type="text" placeholder="Enter Email Address" id="email" name="email">
 				</div>
+				
+
+				<input type="submit" class="submit-btn" value="" name="summit" id="submit">
+				<!-- <div class="submit-btn">
+					<img data-src="img/telegram.svg" alt="send icon">
+				</div> -->
 				<div class="form-prompt">
 					Thank you, your email has now been registered !
 				</div>
@@ -518,7 +523,32 @@ Our working hours are Sunday - Thursday 8am to 5pm GMT +4</div>
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>$(document).ready(function() {
+  $('#form').submit(function(e) {
+    e.preventDefault();
+   
+    var email = $('#email').val();
+    $(".error").remove(); 
+    if (email.length< 1) {
+      $('#email').after('<span class="error">This field is required</span>');
+       $('.form-prompt').hide();
+       $('.footer__form input').show();
+       $('.submit-btn').show();
+    } 
+    else {
+      var regEx = /.+?\@.+/;
+      var validEmail = regEx.test(email);
+      if (!validEmail) {
+        $('#email').after('<span class="error">Enter a valid email</span>');
+        $('.form-prompt').hide();
+       $('.footer__form input').show();
+       $('.submit-btn').show();
+      }
+    }
 
+  });
+});
+</script>
 <script defer src="js/wave.js" data-minify="1" ></script>
 <script async src="js/lazy.js"></script>
 <script async src="js/libs.min.js"></script>

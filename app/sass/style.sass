@@ -210,20 +210,29 @@ ul
 		display: flex
 		align-items: center
 		border-radius: 10px 
-		overflow: hidden
 		margin-top: 20px 
 		margin-bottom: 20px
 
-		input 
+		input[type="text"] 
 			height: 53px
 			padding-left: 13px
 			outline: none
 			border: none
+		input[type="text"]
+			border-top-left-radius: 10px
+			border-bottom-left-radius: 10px
 		input::placeholder 
 			color: #cdcdcd
 		input:focus::placeholder
 			color: transparent
-.submit-btn
+.footer form .submit-btn
+	background-image: url('../img/telegram.svg')
+	background-position: center
+	background-repeat: no-repeat
+	outline: none
+	background-size: 22px
+	outline: none
+	border: none
 	img 
 		width: 22px
 .footer__menu
@@ -747,6 +756,33 @@ ul
 	animation-duration: 1s
 	animation-fill-mode: both
 //---------end animate style--------
+.input-wrapper
+	position: relative 
+	.error 
+		position: absolute
+		left: 0 
+		bottom: -4px
+		width: 100%
+		transform: translateY(100%)
+		color: red
+		font-size: 14px
+.contact-form-row
+	.input-wrapper
+		width: 100%
+		margin-bottom: 40px
+		input 
+			margin-bottom: 0
+.next
+	width: 82px 
+	height: 75px
+	background: transparent 
+	border: none 
+	outline: none 
+	background-image: url('../img/next.png')
+	background-position: center 
+	background-size: 100%
+	background-repeat: no-repeat
+
 @import "media"
 
 

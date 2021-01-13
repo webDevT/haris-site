@@ -26,7 +26,7 @@
 	<div class="container-fluid">
 		<div class="logo">
 			<a href="index.html">
-				<img data-src="img/logo.png" alt="logo">
+				<img src="img/logo.png" alt="logo">
 			</a>
 		</div>
 
@@ -67,13 +67,22 @@
 							<h1 class="main-screen__title">Contact Us or Book a Demo</h1>
 
 							<div class="contact-step step1">
+								<form action="" id="form1" method="post">
+									
+								
 								<div class="main-screen__sub-title">Hi! What is your name? </div>
 							
 							<div class="contact-form-row">
-								
-								<input type="text" placeholder="First Name" class="main-screen__button">
+								<div class="input-wrapper">
+									<input type="text" placeholder="First Name" class="main-screen__button" id="first-name1" name="first-name1">
+								</div>
 
-								<input type="text" placeholder="Last Name" class="main-screen__button">
+								<div class="input-wrapper">
+									<input type="text" placeholder="Last Name" class="main-screen__button" id="last-name1" name="last-name1">
+								</div>
+								
+
+								
 
 							</div>
 								<div class="progress-wrapper">
@@ -88,19 +97,22 @@
    </div>
 </div>
 
-<div class="next next--1">
-	<img src="img/next.png" alt="next icon">
-</div>
+
+<input type="submit" value="" id="submit" name="submit" class="next next--1" />
+
 							</div>
+						</form>
 							</div>
 
 							
 <div class="contact-step step2">
+	<form action="" id="form2" method="post">
 								<div class="main-screen__sub-title">Hi James, can you please share your email address?</div>
 							
 							<div class="contact-form-row">
-								
-								<input type="email" placeholder="Email" class="main-screen__button">
+								<div class="input-wrapper input-wrapper--one">
+								<input type="text" placeholder="Email" class="main-screen__button" id="email2" name="email2">
+							</div>
 
 								
 
@@ -117,18 +129,24 @@
    </div>
 </div>
 
-<div class="next next--2">
-	<img src="img/next.png" alt="next icon">
-</div>
+<input type="submit" value="" id="submit2" name="submit" class="next next--2" />
+
 							</div>
+
+						</form>
 							</div>
 
 <div class="contact-step step3">
+	<form action="" id="form3" method="post">
+		
+	
 								<div class="main-screen__sub-title">And the best number to contact you on?</div>
 							
 							<div class="contact-form-row">
+								<div class="input-wrapper input-wrapper--one">
+									<input type="number" placeholder="Contact Number" class="main-screen__button" id="number" name="number">
+								</div>
 								
-								<input type="text" placeholder="Contact Number" class="main-screen__button">
 
 								
 
@@ -145,24 +163,27 @@
    </div>
 </div>
 
-<div class="next next--3">
-	<img src="img/next.png" alt="next icon">
-</div>
+<input type="submit" value="" id="submit2" name="submit" class="next next--3" />
 							</div>
+							</form>
 							</div>							
 	
 	<div class="contact-step step4">
+		<form action="" id="form4" method="post">
 								<div class="main-screen__sub-title">Are you interested in a demo or something else?</div>
 							
 							<div class="contact-form-row">
 								
-								<div class="main-screen__button">
-									Demo
+								<div class="input-wrapper">
+									<input type="text" placeholder="Demo" class="main-screen__button demo-btn" id="btn1" name="btn1" readonly="">
 								</div>
 
-								<div class="main-screen__button main-screen__button--4">
-									Send Message
+								<div class="input-wrapper">
+									<input type="text" placeholder="Send Message" class="main-screen__button main-screen__button--4" id="btn2" name="btn2" readonly="">
 								</div>
+								
+
+								
 								
 
 								
@@ -180,19 +201,21 @@
    </div>
 </div>
 
-<div class="next next--4">
-	<img src="img/next.png" alt="next icon">
-</div>
+<input type="submit" value="" id="submit2" name="submit" class="next next--4" />
+
 							</div>
+						</form>
 							</div>							
 
 
 <div class="contact-step step5">
+	<form action="" id="form5" method="post">
 								<div class="main-screen__sub-title">Please let us know how we can help you?</div>
 							
 							<div class="contact-form-row">
-								
-								<input type="text" placeholder="Message" class="main-screen__button main-screen__button--message">
+								<div class="input-wrapper input-wrapper--one">
+								<input type="text" placeholder="Message" class="main-screen__button main-screen__button--message" id="msg" name="msg">
+							</div>
 								
 
 								
@@ -210,10 +233,9 @@
    </div>
 </div>
 
-<div class="next next--5">
-	<img src="img/next.png" alt="next icon">
-</div>
+<input type="submit" value="" id="submit2" name="submit" class="next next--5" />
 							</div>
+						</form>
 							</div>
 
 <div class="contact-step step6">
@@ -335,11 +357,16 @@ United Arab Emirates <br>
 				Sign up for new updates
 			</div>
 
-			<form action="">
-				<input type="email" placeholder="Enter Email Address">
-				<div class="submit-btn">
-					<img data-src="img/telegram.svg" alt="send icon">
+			<form action="" id="form" method="post">
+				<div class="input-wrapper">
+					<input type="text" placeholder="Enter Email Address" id="email" name="email">
 				</div>
+				
+
+				<input type="submit" class="submit-btn" value="" name="summit" id="submit">
+				<!-- <div class="submit-btn">
+					<img data-src="img/telegram.svg" alt="send icon">
+				</div> -->
 				<div class="form-prompt">
 					Thank you, your email has now been registered !
 				</div>
@@ -355,6 +382,195 @@ United Arab Emirates <br>
 <!-- end footer -->
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script>$(document).ready(function() {
+  $('#form').submit(function(e) {
+    e.preventDefault();
+   
+    var email = $('#email').val();
+    $(".error").remove(); 
+    if (email.length< 1) {
+      $('#email').after('<span class="error">This field is required</span>');
+       $('.form-prompt').hide();
+       $('.footer__form input').show();
+       $('.submit-btn').show();
+    } 
+    else {
+      var regEx = /.+?\@.+/;
+      var validEmail = regEx.test(email);
+      if (!validEmail) {
+        $('#email').after('<span class="error">Enter a valid email</span>');
+        $('.form-prompt').hide();
+       $('.footer__form input').show();
+       $('.submit-btn').show();
+      }
+    }
+
+  });
+});
+</script>
+
+
+<script>$(document).ready(function() {
+  $('#form1').submit(function(e) {
+    e.preventDefault();
+   var first_name1 = $('#first-name1').val();
+    var last_name1 = $('#last-name1').val();
+    var email2 = $('#email2').val();
+    $(".error2").remove(); 
+   
+
+    if (first_name1.length< 1) {
+      $('#first-name1').after('<span class="error">This field is required</span>');
+      $('.step1').show();
+      $('.step2').hide();
+    }
+
+    if (first_name1.length< 2 && first_name1.length== 1 ) {
+      $('#first-name1').after('<span class="error">This field must be at least 2 characters long</span>');
+       $('.step1').show();
+       $('.step2').hide();
+    }
+
+if (last_name1.length< 1) {
+      $('#last-name1').after('<span class="error">This field is required</span>');
+       $('.step1').show();
+       $('.step2').hide();
+    }
+
+    if (last_name1.length< 2 && last_name1.length== 1 ) {
+      $('#last-name1').after('<span class="error">This field must be at least 2 characters long</span>');
+       $('.step1').show();
+       $('.step2').hide();
+    }
+
+
+   
+
+  });
+});
+</script>
+
+<script>$(document).ready(function() {
+  $('#form2').submit(function(e) {
+    e.preventDefault();
+   
+    var email2 = $('#email2').val();
+    $(".error").remove(); 
+    if (email2.length< 1) {
+      $('#email2').after('<span class="error">This field is required</span>');
+       $('.step2').show();
+      $('.step3').hide();
+    } 
+    else {
+      var regEx2 = /.+?\@.+/;
+      var validEmail2 = regEx2.test(email2);
+      if (!validEmail2) {
+        $('#email2').after('<span class="error">Enter a valid email</span>');
+       $('.step2').show();
+      $('.step3').hide();
+      }
+    }
+
+  });
+});
+</script>
+
+
+<script>$(document).ready(function() {
+  $('#form3').submit(function(e) {
+    e.preventDefault();
+   var number = $('#number').val();
+
+    $(".error2").remove(); 
+   
+
+    if (number.length< 1) {
+      $('#number').after('<span class="error">This field is required</span>');
+     $('.step4').hide();
+	$('.step3').show();
+    }
+
+    if (number.length< 10 ) {
+      $('#number').after('<span class="error">This field must be at least 10 characters long</span>');
+       $('.step4').hide();
+	$('.step3').show();
+    }
+
+
+
+
+
+   
+
+  });
+});
+</script>
+
+<script>$(document).ready(function() {
+  $('#form5').submit(function(e) {
+    e.preventDefault();
+   var msg = $('#msg').val();
+
+    $(".error2").remove(); 
+   
+
+    if (msg.length< 1) {
+      $('#msg').after('<span class="error">This field is required</span>');
+     $('.step6').hide();
+	$('.step5').show();
+    }
+
+    if (msg.length< 10 ) {
+      $('#msg').after('<span class="error">This field must be at least 10 characters long</span>');
+      $('.step6').hide();
+	$('.step5').show();
+    }
+
+
+
+
+
+   
+
+  });
+});
+</script>
+
+<script>$(document).ready(function() {
+  $('#form4').submit(function(e) {
+    e.preventDefault();
+   var btn1 = $('#btn1').val();
+    var btn2 = $('#btn2').val();
+
+    $(".error2").remove(); 
+   
+
+    if (btn1.length< 1) {
+      $('#btn1').after('<span class="error">Select option</span>');
+     $('.step5').hide();
+     $('.step6').hide();
+	$('.step4').show();
+    }
+
+    if (btn2.length< 1) {
+      $('#btn2').after('<span class="error">Select option</span>');
+      $('.step5').hide();
+     $('.step6').hide();
+	$('.step4').show();
+    }
+
+    
+
+
+
+
+
+   
+
+  });
+});
+</script>
 
 <script defer src="js/wave.js" data-minify="1"></script>
 <script async src="js/lazy.js"></script>
